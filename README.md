@@ -9,7 +9,7 @@ arrangement, the force being sensed deforms a strain gauge. The strain gauge mea
 
 <br><img src="images/Wheatstone_circuit_diagram.png" width="600">
 
-The application uses the Event System and the Timer/Counter type F (TCF) peripheral to periodically trigger ADC conversions. The ADC peripheral is operating in Burst Accumulation mode and generates an interrupt every 1024 accumulated samples. The internal PGA is enabled and the gain is set to 16. The input signal is first fed to the PGA for amplification before reaching the conversion stage. For improved accuracy, additional software accumulation is performed. The resulting values are converted to weight and displayed on a Mikroe® OLED Click board, and in the Data Visualizer (DV) interface using the SPI and the USART peripherals, respectively.
+The application uses the Event System (EVSYS) and the Timer/Counter type F (TCF) peripheral to periodically trigger ADC conversions. The ADC peripheral is operating in Burst Accumulation mode and generates an interrupt every 1024 accumulated samples. The internal PGA is enabled and the gain is set to 16. The input signal is first fed to the PGA for amplification before reaching the conversion stage. For improved accuracy, additional software accumulation is performed. The resulting values are converted to weight and displayed on a Mikroe® OLED Click board, and in the Data Visualizer (DV) interface using the SPI and the USART peripherals, respectively.
 
 <br><img src="images/Wscale_Block_Diagram.png" width="600">
 
@@ -32,7 +32,7 @@ The application uses the Event System and the Timer/Counter type F (TCF) periphe
 - [Curiosity Nano Base for Click Boards™](https://www.microchip.com/en-us/development-tool/AC164162):
   <br><img src="images/Curiosity-Nano-Adapter.jpg" height="400">
 
-- Micro Load Cell (0-5kg)
+- Micro Load Cell (0~5kg)
   <br><img src="images/load_cell.PNG" width="400">
 
 - [OLED C CLICK Board](https://www.mikroe.com/oled-c-click) (mikroBUS socket 2):
@@ -40,15 +40,15 @@ The application uses the Event System and the Timer/Counter type F (TCF) periphe
 
 ## Operation
 
-To program the Curiosity Nano boards with this MPLAB X project, follow the steps provided in the [How to Program the Curiosity Nano Board](#how-to-program-the-curiosity-nano-board) chapter.<br><br>
+To program the Curiosity Nano boards with this MPLAB® X project, follow the steps provided in the [How to Program the Curiosity Nano Board](#how-to-program-the-curiosity-nano-board) chapter.<br><br>
 
 ## Setup
 
 The following configurations must be made for this project:
 
 - Configuration bits:
-  - High-frequency Oscillator Frequency: 20 MHz
-  - Watchdog Timeout Period: Watchdog timer off
+  - High-frequency Oscillator: 20 MHz
+  - Watchdog Timeout Period: Watchdog Timer (WDT) off
 
   <br><img src="images/config_bits.PNG" width="600">
 
@@ -171,7 +171,7 @@ This code example showcases the hardware enhancements of the ADC peripheral by i
 
 ##  How to Program the Curiosity Nano board
 
-This chapter shows how to use the MPLAB X IDE to program an AVR device with an `Example_Project.X`. This can be applied for any other projects. 
+This chapter shows how to use the MPLAB X IDE to program an AVR® device with an `Example_Project.X`. This can be applied for any other projects. 
 
 1. Connect the board to the PC.
 
